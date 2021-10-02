@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Collect words</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <h1>String Manipulation</h1>
+  <div id="app">
+    <div style="border: 1pt; border-style: solid; padding: 20pt">
+      <input v-model="word" type="text" placeholder="Type a word" id="wordInput" />
+      <button v-on:click="save(word)"  id="showButton">Show it</button>
+      
+    </div>
+     
+      <table style="border:1px solid black">
+        <tr>
+          <td>1.</td>
+          <td>{{words}}</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>{{message2}}</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>{{message3}}</td>
+        </tr>
+      </table>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
