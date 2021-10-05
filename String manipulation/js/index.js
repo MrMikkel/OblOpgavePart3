@@ -2,24 +2,16 @@ Vue.createApp({
     data() {
         return {
             word: null,
-            words: [],
-            message1: null,
-            message2: null,
-            message3: null,
+            message1: "",
+            message2: "",
+            message3: "",
         }
     },
     methods: {
         save(word) {
-            this.message2.clear
-            this.message2.push(word)
-            // if (this.words == null || this.words.length == 0) {
-            //     this.message = "empty"
-            // }
-            // else {
-                // this.message1 = word;
-                // this.message2 = word;
-                // this.message3 = word;
-            // }
+                this.message1 = word;
+                this.message2 = word.toLowerCase();
+                this.message3 = word.toUpperCase();
         },
         clear() {
             this.words = []
